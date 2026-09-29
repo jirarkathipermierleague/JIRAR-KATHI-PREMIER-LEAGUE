@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JPL — Jirar Kathi Premier League 2026</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="pill">JPL • SEASON 1</div><h1>JIRAR KATHI PREMIER LEAGUE</h1><p>Official Tournament Portal</p></header>
+<nav><a href="#home">Home</a><a href="#matches">Matches</a><a href="#table">Standings</a><a href="#teams">Teams</a><a href="#rules">Rules</a><a href="#admin">Admin</a></nav>
+<main>
+<section id="home"><h2>🏆 JPL 2026</h2><div class="grid"><div class="card"><small>NEXT MATCH</small><b id="next">—</b></div><div class="card"><small>TEAMS</small><b id="tc">0</b></div><div class="card"><small>PLAYED</small><b id="pc">0</b></div></div></section>
+<section id="matches"><h2>⚽ Fixtures & Results</h2><div id="matchesBox"></div></section>
+<section id="table"><h2>📊 Points Table</h2><div class="scroll"><table><thead><tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead><tbody id="standings"></tbody></table></div></section>
+<section id="teams"><h2>🏟️ Teams</h2><div id="teamsBox" class="teamgrid"></div></section>
+<section id="rules"><h2>📜 Rules & Regulations</h2><div id="rulesBox"></div></section>
+<section id="admin"><h2>⚙️ Admin Panel</h2><div id="login"><input id="pass" type="password" placeholder="Admin password"><button onclick="login()">Login</button><p class="muted">Default password: <b>jpl2026</b> — change it in app.js before publishing.</p></div><div id="panel" hidden><div class="adminbar"><button onclick="addTeam()">+ Add Team</button><button onclick="addMatch()">+ Add Match</button><button onclick="saveData()">💾 Save</button><button class="danger" onclick="resetData()">Reset</button></div><h3>Teams</h3><div id="editTeams"></div><h3>Matches</h3><div id="editMatches"></div><h3>Rules</h3><textarea id="rulesEdit" rows="8"></textarea><p class="muted">Changes are saved in this browser using local storage. For a shared online admin panel across devices, connect this site to a cloud database/backend.</p></div></section>
+</main><footer>© 2026 JPL — Jirar Kathi Premier League</footer><script src="app.js"></script></body></html>
